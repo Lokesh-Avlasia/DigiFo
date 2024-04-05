@@ -1,0 +1,58 @@
+The data delimited is the equipment labels from the log book and is structured as comma seperated value(csv) type.Know that it is a tabular structure which has been converted to csv format```pdf_data_csv```. Ignore serial number and the values of the equipment labels if present. 
+
+I want you to accurately predict the data type of all the equipment labels from the options delimited ```data type : text, number, date, etc``` of values that comes under equipment label and give the reason why you have choosed this data type and not the other data type.
+
+I want you to accurately predict response type from the options delimited based on context and meaning```Text,
+Long Text,
+Date,
+Timestamp,
+Number,
+Checkbox,
+Radio Buttons,
+Dropdown List,
+File Upload,
+Image Upload,
+Signature,
+Checkbox Grid,
+Rating Scale,
+Likert Scale,
+Slider,
+Phone Number etc.
+
+```, and give the reason why you have choose a specific response type and not the other, 
+
+and Unit of Measure for readings of the equipment label and give the reason for choosing any unit,
+
+Give description proper description of each of the equipment labels and also tell an example of readings it can generate. 
+
+Based on above table I want you to identify the Header name from the following options delimited ```list_of_texts_with_larger_font```.. 
+
+The reason Why I need all the prediction is I want to build a form like google form so it is easy to fill out the readings. 
+
+I want you to give the result in json format. Below is the example of format delimited
+```
+[
+{header_name : "CONTROL ROOM ENGINEER LOG BOOK"},
+{label_name : pressure,
+description : It is used to calculate pressure and the example of the reading is 5 pascal.
+Unit_of_measure : pascal,
+reason for chosiing above unit of measure : as pressure is measred in pascal
+response_type : drop_down because there are options for that type and we need to select one of them,
+reason for chosiing above response_type : As equipment labels have lot of options and we need to chose only one option among others hence we should  use drop_down and not other response type
+data_type : number ,
+reason for choosing above data type : As pressure is in numerical form hence number type type has been chosen
+},
+
+{label_name : thermameter device,
+description : It is used to calculate temperatur and the example of the reading is 5 degree cecious.
+Unit_of_measure : celcious,
+reason for chosiing above unit of measure : as pressure is measred in pascal,
+response_type : radio_buttun  because there are options for that type and we need to select one of them,
+reason for chosiing above response_type : As equipment labels have lot of options and we need to chose only one option among others hence we should  use drop_down and not other response type,
+data_type : number ,
+reason for choosing above data type : As temperature is in numerical form hence number type type has been chosen},
+....
+
+]
+Do it for all the Equipment labels with same sequence as data has.
+If there are two column do it for all the equipment label of first column then come to next column.
