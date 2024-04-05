@@ -7,7 +7,7 @@ This file contains functions related to extracting and formatting data from PDF 
 ### Functions:
 1. pdf_reader(path)
    
-   Purpose: Extracts tables from a PDF file.
+- Purpose: Extracts tables from a PDF file.
 
    Parameters:
    
