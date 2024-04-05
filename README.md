@@ -29,23 +29,16 @@ This file contains functions for extracting specific text elements from PDF file
 
 ### Functions:
 1. extract_bold_words(path, page_no)
-
-Purpose: Extracts bold text from a specific page of a PDF file.
-
-Parameters:
-
-   path (str): The file path of the PDF.
-
-   page_no (int): The page number from which to extract bold text.
-
-Returns:
-
-   clean_text (str): Extracted bold text from the specified page.
+   - Purpose: Extracts bold text from a specific page of a PDF file.
+   - Parameters:
+     - path (str): The file path of the PDF.
+     - page_no (int): The page number from which to extract bold text.
+   - Returns:
+      - clean_text (str): Extracted bold text from the specified page.
 
 2. font_based_extraction(path)
-
-Purpose: Extracts text with font size greater than or equal to 12 from a PDF file.
-Parameters:
-path (str): The file path of the PDF.
-Returns:
-Extract_Data (list): List of text elements with font size greater than or equal to 12.
+   - Purpose: Extracts text with font size greater than or equal to 12 from a PDF file.
+   - Parameters:
+      - path (str): The file path of the PDF.
+   - Returns:
+      - Extract_Data (list): List of text elements with font size greater than or equal to 12.
