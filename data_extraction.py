@@ -59,8 +59,3 @@ if __name__ == "__main__":
 
 
 
-
-
-"""
-Python, Pandas, SQL, Numpy ,Scikit Learn, TensorFlow, Data Wrangling, Natural Language Processing, Regular Expression, Data Engineering, Machine Learning, Flask API, MongoDB, Web Scrapping, PDF parsing, Excel, 
-Problem-Solving"""
