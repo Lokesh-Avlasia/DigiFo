@@ -7,13 +7,13 @@ This file contains functions related to extracting and formatting data from PDF 
 ### Functions:
 1. pdf_reader(path)
    
-Purpose: Extracts tables from a PDF file.
+   Purpose: Extracts tables from a PDF file.
 
-Parameters:
-path (str): The file path of the PDF.
+   Parameters:
+   path (str): The file path of the PDF.
 
-Returns:
-all_pages (list): A list containing tables extracted from each page of the PDF.
+   Returns:
+   all_pages (list): A list containing tables extracted from each page of the PDF.
 
 2. pdf_data_formatter(all_pages)
    
