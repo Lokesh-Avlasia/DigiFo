@@ -13,7 +13,7 @@ path (str): The file path of the PDF.
 Returns:
 all_pages (list): A list containing tables extracted from each page of the PDF.
 
-3. pdf_data_formatter(all_pages)
+2. pdf_data_formatter(all_pages)
    
 Purpose: Formats extracted tables into CSV format.
 Parameters:
