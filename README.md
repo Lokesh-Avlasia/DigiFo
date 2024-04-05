@@ -17,9 +17,9 @@ This file contains functions related to extracting and formatting data from PDF 
    
    - Purpose: Formats extracted tables into CSV format.
    - Parameters:
-         - all_pages (list): A list of tables extracted from PDF pages.
+      - all_pages (list): A list of tables extracted from PDF pages.
    - Returns:
-         - text_string (str): A string containing the CSV-formatted data from all tables.
+      - text_string (str): A string containing the CSV-formatted data from all tables.
 
 
 
